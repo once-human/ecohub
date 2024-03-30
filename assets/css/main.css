@@ -1,16 +1,56 @@
 /* main.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .banner {
     position: relative;
     height: 100vh;
-    background-image: url("path/to/banner-image.jpg");
-    background-size: cover;
-    background-position: center;
+    background-color: #275243;
     display: flex;
+    flex-direction: column; /* Ensure content stacks vertically */
     justify-content: center;
     align-items: center;
-    color: #000;
+    color: #fff;
     text-align: center;
-    font-family: "Poppins", sans-serif; /* Add Poppins font family */
+    font-family: "Poppins", sans-serif;
+}
+
+.banner nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.banner nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.banner nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.banner nav ul li:last-child {
+    margin-right: 0;
+}
+
+.banner nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.banner nav ul li a:hover {
+    color: #ffc107; /* Change color on hover */
 }
 
 .banner-content {
