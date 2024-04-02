@@ -28,7 +28,19 @@ EcoHub is a platform dedicated to providing information and resources for a sust
 To run the website locally, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Open the `index.html` file in your web browser.
+   ```
+   git clone https://github.com/yaglewad-onkar/ecohub.git
+   ```
+2. Node.js is required.
+
+3. Install all dependencies.
+   ```
+   npm i
+   ```
+4. Start
+   ```
+   npm start
+   ```
 
 ## Contributing
 
