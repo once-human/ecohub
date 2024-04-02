@@ -1,0 +1,18 @@
+{
+  "name": "ecohub",
+  "version": "1.0.0",
+  "description": "Welcome to the EcoHub website repository! This repository contains the source code for our website, which aims to promote environmental awareness and sustainability.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node index.js"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "openai": "^4.32.0"
+  }
+}
