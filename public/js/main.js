@@ -20,7 +20,11 @@ document
 
       const responseData = await response.json();
 
-      document.getElementById("response").innerText = responseData.reply;
+      var text = responseData.reply,
+        target = document.getElementById("response"),
+        converter = new showdown.Converter(),
+        html = converter.makeHtml(text);
+      target.innerHTML = html;
     } catch (error) {
       console.error("Error sending query:", error);
       document.getElementById("response").innerText =
