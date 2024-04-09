@@ -11,12 +11,28 @@
     <title>Chatbot - EcoHub</title>
   </head>
   <body>
-    <form id="queryForm">
-      <label for="queryInput">Enter your query:</label>
-      <input type="text" id="queryInput" name="queryInput" />
-      <button type="submit">Submit</button>
-    </form>
-    <div id="response"></div>
+    <div class="banner">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="/chatbot.html">Chatbot</a></li>
+          <li><a href="/donate.html">Tree Donation</a></li>
+          <li><a href="/about.html">About Us</a></li>
+          <li><a href="/joinus.html">Get Involved</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="response"></div>
+      <form id="queryForm">
+        <input type="text" id="queryInput" name="queryInput" />
+        <button type="submit" class="submit">
+          <img src="/img/send.svg" alt="" />
+        </button>
+      </form>
+    </div>
+    <script src="
+    https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js
+    "></script>
     <script src="js/main.js"></script>
   </body>
 </html>
