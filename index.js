@@ -13,7 +13,8 @@ const __dirname = path.dirname(__filename);
 
 // Initialize OpenAI instance with your API key
 const openai = new OpenAI({
-  apiKey: "api key here",
+  apiKey: "pk-***",
+  baseURL: "https://api.pawan.krd/v1", // if Using third party api
 });
 
 // Middleware to enable CORS
@@ -34,7 +35,7 @@ app.post("/query", async (req, res) => {
     // Call OpenAI API to get response
     const response = await openai.chat.completions.create({
       messages: [{ role: "user", content: message }],
-      model: "gpt-3.5-turbo",
+      model: "pai-001", // change model according to need
     });
 
     // Send response from OpenAI API to client
@@ -61,5 +62,5 @@ app.get("/:page", (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server is running on port http://localhost:${port}`);
 });
