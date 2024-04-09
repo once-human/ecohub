@@ -42,6 +42,16 @@ To run the website locally, follow these steps:
    npm start
    ```
 
+## Developer Notes
+
+Use API_KEY from third party (Reverse Proxy) like pawan.krd
+
+1. Join Discord Server [Pawan.krd](https://discord.pawan.krd/).
+
+2. Go to `#bot` Section write `/key` command.
+
+3. Paste Key in `apiKey: "pk-***"`,
+
 ## Contributing
 
 We welcome contributions from the community to help improve EcoHub and make it even more impactful. If you have ideas for new features, enhancements, or bug fixes, feel free to open an issue or submit a pull request.
